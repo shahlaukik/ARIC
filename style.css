@@ -15,6 +15,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -161,7 +162,7 @@ h2 p {
 }
 
 .section {
-  padding: 6rem 0;
+  padding: 8rem 0;
   display: flex;
   align-items: center;
 }
@@ -198,8 +199,7 @@ h2 p {
 .section__objectives,
 .section__timeline,
 .section__registration,
-.section__organization,
-section__abt-abv {
+.section__organization {
   flex-direction: column;
 }
 
@@ -391,4 +391,41 @@ h3 {
 .contact--icon img {
   height: 4rem;
   margin-left: -1rem;
+}
+
+.section__stay-loop {
+  position: relative;
+}
+
+.form__cont {
+  margin-top: 4rem;
+  padding: 1.6rem 3.2rem;
+  box-shadow: 0px 40px 80px rgba(44, 39, 56, 0.08);
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  gap: 2rem;
+}
+
+form input {
+  width: 40rem;
+  padding: 4px 1.2rem;
+  display: inline-block;
+  border: 1px solid var(--color-primary-darker);
+  border-radius: 6px;
+}
+
+.left--illustration {
+  position: absolute;
+  left: -10rem;
+  width: 24rem;
+}
+
+.right--illustration {
+  width: 36rem;
+  position: absolute;
+  right: -14rem;
+  top: -4rem;
 }
