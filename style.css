@@ -1,0 +1,143 @@
+:root {
+  --color-primary: #2c2738;
+  --color-link: #756f86;
+  --color-tag: #0880ae;
+  --color-tag-text: #ebf4f8;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  color: var(--color-primary);
+  scroll-behavior: smooth;
+}
+
+.nav__pane {
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo--name {
+  font-size: 3.2rem;
+}
+
+.nav__logo--year {
+  font-size: 2.4rem;
+  /* font-weight: 500; */
+}
+
+.nav__bar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav__bar li {
+  font-size: 1.44rem;
+}
+
+.nav__bar a:link,
+.nav__bar a:visited {
+  text-decoration: none;
+  color: var(--color-link);
+  font-weight: 400;
+}
+
+.nav__bar a:hover,
+.nav__bar a:active {
+  color: var(--color-primary);
+}
+
+.nav__bar span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.btn {
+  background-color: var(--color-tag);
+  color: var(--color-tag-text);
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 100px;
+}
+
+.nav__btn {
+  border: none;
+  font-size: 1.44rem;
+  border-radius: 6px;
+  border: 2px solid var(--color-tag);
+}
+
+.nav__btn:hover {
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+.hero__section {
+  padding: 4rem;
+  display: flex;
+  gap: 6rem;
+}
+
+.hero__left-cont {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+h1 {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 420;
+}
+
+h2 p {
+  margin-top: 1rem;
+  line-height: 1.4;
+}
+
+.hero__date {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero__date p {
+  font-size: 1.48rem;
+  font-weight: 500;
+}
+
+.hero__img-cont {
+  width: 40%;
+}
+
+.hero__img-cont img {
+  width: 100%;
+}
+
+.hero__left-cont button {
+  width: fit-content;
+}
+
+#abt_aric {
+}
