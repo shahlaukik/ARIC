@@ -29,6 +29,7 @@ body {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.95);
   width: calc(100% - 12rem);
+  z-index: 999;
 }
 
 .nav__pane {
@@ -160,7 +161,7 @@ h2 p {
 }
 
 .section {
-  padding: 10rem 0;
+  padding: 6rem 0;
   display: flex;
   align-items: center;
 }
@@ -197,7 +198,8 @@ h2 p {
 .section__objectives,
 .section__timeline,
 .section__registration,
-.section__organization {
+.section__organization,
+section__abt-abv {
   flex-direction: column;
 }
 
@@ -339,4 +341,54 @@ h3 {
 .btn--abt__abv:hover {
   cursor: pointer;
   border: 1px solid var(--color-primary);
+}
+
+.contact_us--img-cont {
+  position: relative;
+}
+
+.map_img {
+  border-radius: 1rem;
+}
+
+.box--cont {
+  position: absolute;
+  top: 20%;
+  left: 26%;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+}
+
+.box {
+  width: max-content;
+  height: max-content;
+  background-color: white;
+  color: #2c2738;
+  padding: 2rem;
+  position: relative;
+  border-radius: 1rem;
+}
+
+.box.arrow-bottom:after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  border-top: 1rem solid #fff;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-bottom: none;
+}
+
+.details {
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.contact--icon img {
+  height: 4rem;
+  margin-left: -1rem;
 }

@@ -18,7 +18,7 @@ const stickyCallBack = function (entries) {
 const headerObserver = new IntersectionObserver(stickyCallBack, {
   root: null,
   threshold: 0,
-  rootMargin: `-${navPaneHeight + 4}px`,
+  rootMargin: `-${navPaneHeight + 10}px`,
 });
 
 headerObserver.observe(header);
