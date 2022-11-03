@@ -1,24 +1,11 @@
 "use strict";
 
-///////////////////////////////////////
-//        Sticky Navigation          //
-///////////////////////////////////////
-
-const header = document.querySelector(".header");
-const navPane = document.querySelector(".nav__pane");
-const navPaneHeight = navPane.getBoundingClientRect().height;
-
-const stickyCallBack = function (entries) {
-  const entry = entries[0];
-
-  if (!entry.isIntersecting) navPane.classList.add("sticky");
-  else navPane.classList.remove("sticky");
-};
-
-const headerObserver = new IntersectionObserver(stickyCallBack, {
-  root: null,
-  threshold: 0,
-  rootMargin: `-${navPaneHeight + 10}px`,
+// Add shadow to navigation bar when scrolling
+window.addEventListener("scroll", (e) => {
+    const navPane = document.querySelector(".nav__pane");
+    if (window.pageYOffset > 0) {
+        navPane.classList.add("nav__shadow");
+    } else {
+        navPane.classList.remove("nav__shadow");
+    }
 });
-
-headerObserver.observe(header);
