@@ -9,16 +9,16 @@ const navPane = document.querySelector(".nav__pane");
 const navPaneHeight = navPane.getBoundingClientRect().height;
 
 const stickyCallBack = function (entries) {
-  const entry = entries[0];
+    const entry = entries[0];
 
-  if (!entry.isIntersecting) navPane.classList.add("sticky");
-  else navPane.classList.remove("sticky");
+    if (!entry.isIntersecting) navPane.classList.add("sticky");
+    else navPane.classList.remove("sticky");
 };
 
 const headerObserver = new IntersectionObserver(stickyCallBack, {
-  root: null,
-  threshold: 0,
-  rootMargin: `-${navPaneHeight + 10}px`,
+    root: null,
+    threshold: 0,
+    rootMargin: `-${navPaneHeight + 10}px`,
 });
 
 headerObserver.observe(header);
