@@ -21,10 +21,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- Stylesheets -->
-        <link rel="stylesheet" href="reset.css" />
-        <link rel="stylesheet" href="design_system.css" />
-        <link rel="stylesheet" href="design_elements.css" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="./stylesheets/reset.css" />
+        <link rel="stylesheet" href="./stylesheets/pageSetup.css" />
+        <link rel="stylesheet" href="./stylesheets/designSystem.css" />
+        <link rel="stylesheet" href="./stylesheets/components.css" />
+        <link rel="stylesheet" href="./stylesheets/navbar.css" />
+        <link rel="stylesheet" href="./stylesheets/style.css" />
 
         <!-- Script -->
         <script defer src="./script.js"></script>
@@ -49,11 +51,11 @@
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li>
-                            <a href="#abt_aric">About ARIC'22</a>
+                            <a href="#aboutARIC">About ARIC'22</a>
                         </li>
                         <li><a href="#committee">Organising Committee</a></li>
-                        <li><a href="#abt_iiitm">About IIITM</a></li>
-                        <li><a href="#contact_us">Contact Us</a></li>
+                        <li><a href="#aboutIIITM">About IIITM</a></li>
+                        <li><a href="#contactUs">Contact Us</a></li>
                     </ul>
                 </div>
                 <a href="https://forms.gle/PNM3RCd8CZ4vjv8C9" target="_blank">
@@ -72,16 +74,16 @@
                                 <a href="#" onclick="toggleNavOptions2()">Home</a>
                             </li>
                             <li>
-                                <a href="#abt_aric" onclick="toggleNavOptions2()">About ARIC'22</a>
+                                <a href="#aboutARIC" onclick="toggleNavOptions2()">About ARIC'22</a>
                             </li>
                             <li>
                                 <a href="#committee" onclick="toggleNavOptions2()">Organising Committee</a>
                             </li>
                             <li>
-                                <a href="#abt_iiitm" onclick="toggleNavOptions2()">About IIITM</a>
+                                <a href="#aboutIIITM" onclick="toggleNavOptions2()">About IIITM</a>
                             </li>
                             <li>
-                                <a href="#contact_us" onclick="toggleNavOptions2()">Contact Us</a>
+                                <a href="#contactUs" onclick="toggleNavOptions2()">Contact Us</a>
                             </li>
                             <li>
                                 <a
@@ -123,9 +125,9 @@
 
         <main>
             <!-- About ARIC'22 -->
-            <section class="division aboutARIC">
+            <section class="division aboutARIC" id="aboutARIC">
                 <div class="imageSubsection">
-                    <img src="./allAssets/Images/aboutARIC.JPG" alt="" />
+                    <img src="./allAssets/Images/aboutARIC.JPG" alt="persons sitting in conference room" />
                 </div>
                 <div class="textSubsection">
                     <h2 class="heading1">About ARIC'22</h2>
@@ -145,233 +147,218 @@
             </section>
 
             <!-- Objectives -->
-            <section id="" class="section section__objectives">
-                <div class="section__desc-cont">
-                    <span class="btn btn--tag">About ARIC' <span>22</span></span>
-                    <h1>Objectives</h1>
-                    <p class="section--desc desc">
+            <section class="division objectives">
+                <div class="infoTitle">
+                    <span class="tag tagText">About ARIC'22</span>
+                    <h2 class="heading2">Objectives</h2>
+                    <p class="paragraphPrimary">
                         The prime objective of the conclave is to bring together the students, faculties, and
                         researchers to the wide spectrum of Science, Technology and Engineering fields
                     </p>
                 </div>
 
-                <div class="objectives__cont">
-                    <div class="object__cont">
-                        <div class="object--img-cont">
-                            <img
-                                src="./Assets/Objectiives Illustration/business-handshake-background-flat-style/271783-P5O9DL-827.jpg"
-                                alt=""
-                            />
+                <div class="cardContainer">
+                    <div class="card">
+                        <div class="cardImg">
+                            <img src="./allAssets/Illustrations/objectives/handshake.png" alt="" />
                         </div>
-
-                        <h3 class="object__cont--head">Meet Prominent Personalities</h3>
-                        <p class="object__cont--desc desc">
+                        <h6 class="cardTitle paragraphPrimarySemibold">Meet Prominent Personalities</h6>
+                        <p class="cardDescription paragraphPrimary">
                             Converse with academics, researchers, and technologists from prestigious Indian and
                             international organizations
                         </p>
                     </div>
 
-                    <div class="object__cont">
-                        <div class="object--img-cont">
-                            <img
-                                src="./Assets/Objectiives Illustration/magnifying-glass-with-file-searching/2808165.jpg"
-                                alt=""
-                            />
+                    <div class="card">
+                        <div class="cardImg">
+                            <img src="./allAssets/Illustrations/objectives/fileSearching.png" alt="" />
                         </div>
-                        <h3 class="object__cont--head">Explore Ongoing Research</h3>
-                        <p class="object__cont--desc desc">
+                        <h6 class="cardTitle paragraphPrimarySemibold">Explore Ongoing Research</h6>
+                        <p class="cardDescription paragraphPrimary">
                             Opportunity for individuals to learn about the ongoing research being done at various
                             institutions across the nation.
                         </p>
                     </div>
 
-                    <div class="object__cont">
-                        <div class="object--img-cont">
-                            <img src="./Assets/Objectiives Illustration/chat-bubble.jpg/25540.jpg" alt="" />
+                    <div class="card">
+                        <div class="cardImg">
+                            <img src="./allAssets/Illustrations/objectives/chatBubble.png" alt="" />
                         </div>
-                        <h3 class="object__cont--head">Discussion New Projects</h3>
-                        <p class="object__cont--desc desc">
+                        <h6 class="cardTitle paragraphPrimarySemibold">Discussion New Projects</h6>
+                        <p class="cardDescription paragraphPrimary">
                             Platform for discussing new projects and collaborations as well as a place for discussing
                             scientific ideas
                         </p>
                     </div>
 
-                    <div class="object__cont">
-                        <div class="object--img-cont">
-                            <img
-                                src="./Assets/Objectiives Illustration/social-development-abstract-concept-vector-illustration-children-learn-social-skills-competence-positive-impact-successful-communication-career-success-education-abstract-metaphor.jpg/Wavy_Lst-19_Single-10.jpg"
-                                alt=""
-                            />
+                    <div class="card">
+                        <div class="cardImg">
+                            <img src="./allAssets/Illustrations/objectives/interactWithExperts.png" alt="" />
                         </div>
-                        <h3 class="object__cont--head">Interact With Experts</h3>
-                        <p class="object__cont--desc desc">
+                        <h6 class="cardTitle paragraphPrimarySemibold">Interact With Experts</h6>
+                        <p class="cardDescription paragraphPrimary">
                             Interactions of students with various research experts through the poster presentation,
                             exhibition, and conversations
                         </p>
                     </div>
 
-                    <div class="object__cont">
-                        <div class="object--img-cont">
-                            <img
-                                src="./Assets/Objectiives Illustration/cute-astronaut-bring-money-bag-cartoon-vector-icon-illustration-science-business-icon-isolated-flat.jpg/6100_4_04.jpg"
-                                alt=""
-                            />
+                    <div class="card">
+                        <div class="cardImg">
+                            <img src="./allAssets/Illustrations/objectives/projectFunding.png" alt="" />
                         </div>
-                        <h3 class="object__cont--head">Project Funding Oppotunity</h3>
-                        <p class="object__cont--desc desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quidem.
+                        <h6 class="cardTitle paragraphPrimarySemibold">Project Funding Oppotunity</h6>
+                        <p class="cardDescription paragraphPrimary">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut doloribus officiis vero et
+                            reprehenderit! Itaque.
                         </p>
                     </div>
                 </div>
             </section>
 
-            <section id="" class="section section__timeline">
-                <div class="section__desc-cont">
-                    <span class="btn btn--tag">About ARIC' <span>22</span></span>
-                    <h1>Timeline</h1>
-                    <p class="section--desc desc">
+            <!-- Timeline -->
+            <section class="division timeline">
+                <div class="infoTitle">
+                    <span class="tag tagText">About ARIC'22</span>
+                    <h2 class="heading2">Timeline</h2>
+                    <p class="paragraphPrimary">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam atque soluta iure obcaecati
                         officiis quaerat autem dolores sint accusantium, animi optio laborum, repellat molestiae
                         blanditiis labore eaque fugit incidunt voluptatem!
                     </p>
                 </div>
 
-                <div class="timeline__box">
-                    <img src="./Assets/Timeline-Symbol/1.svg" alt="" />
-                    <!-- <div class="events-cont">
-            <div class="eve-cont">
-              <img
-                src="./Assets/Material Symbols/start_FILL0_wght700_GRAD0_opsz48.svg"
-                alt=""
-              />
-            </div>
-
-            <div class="eve-cont">
-              <img
-                src="./Assets/Material Symbols/start_FILL0_wght700_GRAD0_opsz48.svg"
-                alt=""
-              />
-            </div>
-          </div> -->
+                <div class="timelineContainer">
+                    <img src="./allAssets/timeline.svg" alt="" />
                 </div>
             </section>
 
-            <section id="" class="section section__registration">
-                <div class="section__desc-cont">
-                    <span class="btn btn--tag">About ARIC' <span>22</span></span>
-                    <h1>Registration</h1>
-                    <p class="section--desc desc">
+            <!-- Registration -->
+            <section class="division registration">
+                <div class="infoTitle">
+                    <span class="tag tagText">About ARIC'22</span>
+                    <h2 class="heading2">Registration</h2>
+                    <p class="paragraphPrimary">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam atque soluta iure obcaecati
                         officiis quaerat autem dolores sint accusantium, animi optio laborum, repellat molestiae
                         blanditiis labore eaque fugit incidunt voluptatem!
                     </p>
                 </div>
 
-                <div class="registrations__cont">
-                    <div class="registration registration--1">
-                        <img src="./Assets/checkmark-circle.svg" alt="" />
-                        <p class="registration--head">Eligibility</p>
-                        <p class="desc">
+                <div class="contentGrid">
+                    <div class="gridItem gridItem1">
+                        <div class="gridItemTitle">
+                            <span class="material-symbols-rounded"> how_to_reg </span>
+                            <span class="paragraphPrimarySemibold"> Eligibility </span>
+                        </div>
+                        <p class="paragraphPrimary">
                             Participation in this workshop is open to the faculty members/PhD Scholars/PG Students of
                             ABV-IIITM Gwalior. The people from industries/start-up can also participate in the event.
                         </p>
-                        <ul class="desc">
+                        <ul class="paragraphPrimary">
                             <li>Professionals from Industries</li>
                             <li>Students of PG / PhD Program</li>
                             <li>Faculties from Engineering Institutions</li>
                         </ul>
                     </div>
 
-                    <div class="registration--2-3">
-                        <div class="registration registration--2">
-                            <img src="./Assets/business.svg" alt="" />
-                            <p class="registration--head">Accommodation. Food and Beverages</p>
-                            <p class="desc">
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                accusam et justo duo dolores et ea rebum
-                            </p>
+                    <div class="gridItem gridItem2">
+                        <div class="gridItemTitle">
+                            <span class="material-symbols-rounded"> apartment </span>
+                            <span class="paragraphPrimarySemibold"> Accommodation. Food and Beverages </span>
                         </div>
+                        <p class="paragraphPrimary">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et justo duo dolores et ea rebum
+                        </p>
+                    </div>
 
-                        <div class="registration registration--3">
-                            <img src="./Assets/icons8-rupee-30.png" alt="" />
-                            <p class="registration--head">Registration Charges</p>
-                            <p class="desc">There are no registration charges to attend the program.</p>
+                    <div class="gridItem gridItem3">
+                        <div class="gridItemTitle">
+                            <span class="material-symbols-rounded"> currency_rupee </span>
+                            <span class="paragraphPrimarySemibold"> Registration Charges </span>
                         </div>
+                        <p class="paragraphPrimary">There are no registration charges to attend the program.</p>
                     </div>
                 </div>
 
-                <button class="btn nav__btn">Register</button>
+                <a href="https://forms.gle/PNM3RCd8CZ4vjv8C9" target="_blank">
+                    <button class="btn btnText navButton">Register</button>
+                </a>
             </section>
 
-            <section id="committee" class="section section__organization">
-                <div class="section__desc-cont">
-                    <!-- <span class="btn btn--tag">About ARIC' <span>22</span></span> -->
-                    <h1>Organising Committee</h1>
-                    <p class="section--desc desc">
+            <!-- Organising Committee -->
+            <section class="division committee" id="committee">
+                <div class="infoTitle">
+                    <h2 class="heading1">Organising Committee</h2>
+                    <p class="paragraphPrimary">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
                         ut labore et dolore magna aliquyam erat, sed diam voluptua. At.
                     </p>
                 </div>
 
-                <div class="organizations--cont">
-                    <div class="organization--1-2">
-                        <div class="organization">
-                            <div class="org--img-cont">
-                                <img src="./Assets/Sir Photos/1650440085_Prof.-Sri-Niwas-Singh.jpg" alt="" />
-                            </div>
-                            <span class="org--name">Prof S N Singh</span>
-                            <span class="org--type">Patron</span>
-                            <span class="org--place">Director, ABV-IIITM</span>
+                <div class="cardContainer">
+                    <div class="card">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Committee/Prof.-Sri-Niwas-Singh.jpg" alt="" />
                         </div>
-
-                        <div class="organization">
-                            <div class="org--img-cont">
-                                <img src="./Assets/Sir Photos/1624907642_Anurag-1.jpg" alt="" />
-                            </div>
-                            <span class="org--name">Prof Anurag Shrivastava</span>
-                            <span class="org--type">Program Advisor</span>
-                            <span class="org--place">Dean Alumini and External Relations</span>
-                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Prof S N Singh</h6>
+                        <p class="cardDescription paragraphPrimary">
+                            Patron <br />
+                            Director, ABV-IIITM Gwalior
+                        </p>
                     </div>
 
-                    <div class="organization">
-                        <div class="org--img-cont">
-                            <img src="./Assets/Sir Photos/1554377483_Manoj Dash.jpg" alt="" />
+                    <div class="card">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Committee/Anurag.jpg" alt="" />
                         </div>
-                        <span class="org--name">Dr Manoj Dash</span>
-                        <span class="org--type">Program Coordinator </span>
-                        <span class="org--place">Faulty Coordinator, TIC</span>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Prof Anurag Shrivastava</h6>
+                        <p class="cardDescription paragraphPrimary">
+                            Program Advisor <br />
+                            Dean Alumini and External Relations
+                        </p>
                     </div>
 
-                    <div class="organization">
-                        <div class="org--img-cont">
-                            <img src="./Assets/Sir Photos/1555417021_Pinku Ranjan.png" alt="" />
+                    <div class="card">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Committee/Manoj Dash.jpg" alt="" />
                         </div>
-                        <span class="org--name">Dr Pinku Ranjan</span>
-                        <span class="org--type">Program Coordinator</span>
-                        <!-- <span class="org--place">Director, ABV-IIITM</span> -->
+                        <h6 class="cardTitle paragraphPrimarySemibold">Dr Manoj Dash</h6>
+                        <p class="cardDescription paragraphPrimary">
+                            Program Coordinator <br />
+                            Faulty Coordinator, TIC
+                        </p>
                     </div>
 
-                    <div class="organization">
-                        <div class="org--img-cont">
-                            <img src="./Assets/Sir Photos/1601567414_Santosh Singh.jpg" alt="" />
+                    <div class="card">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Committee/Pinku Ranjan.png" alt="" />
                         </div>
-                        <span class="org--name">Dr Santosh Singh Rathod</span>
-                        <span class="org--type">Program Coordinator</span>
-                        <!-- <span class="org--place">Director, ABV-IIITM</span> -->
+                        <h6 class="cardTitle paragraphPrimarySemibold">Dr Pinku Ranjan</h6>
+                        <p class="cardDescription paragraphPrimary">Program Coordinator</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Committee/Santosh Singh.jpg" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Dr Santosh Singh Rathod</h6>
+                        <p class="cardDescription paragraphPrimary">Program Coordinator</p>
                     </div>
                 </div>
             </section>
 
-            <section id="abt_iiitm" class="section section-abt__aric section__abt-abv">
-                <div class="abt__aric--desc-cont">
-                    <div>
-                        <!-- <p class="btn btn--tag">About ARIC' <span>22</span></p> -->
-                        <h1>About ABV IIITM</h1>
-                    </div>
+            <!-- About IIITM -->
+            <section class="division aboutIIITM" id="aboutIIITM">
+                <div class="imageSubsection">
+                    <img src="./allAssets/Images/aboutIIITM.png" alt="Photo of ABV IIITM Main Building" />
+                </div>
 
-                    <p class="abt__aric--desc desc">
+                <div class="textSubsection">
+                    <h2 class="heading1">About ABV IIITM</h2>
+
+                    <p class="paragraphPrimary">
                         Atal Bihari Vajpayee-Indian Institute of Information Technology and Management Gwalior
                         (ABV-IIITM Gwalior) is an apex Information Technology (IT) and Management Institute, established
                         by the Government of India. ABV-IIITM Gwalior has been declared an Institute of National
@@ -385,98 +372,68 @@
                         national/ international conferences and journals of repute.
                     </p>
 
-                    <button class="btn btn--abt__abv">Visit Website</button>
-                </div>
-
-                <div class="abt__aric--img-cont">
-                    <img src="./Assets/Hero Illustration- company-employees-sharing-thoughts-ideas/5469.svg" alt="" />
+                    <a href="https://www.iiitm.ac.in/index.php/en/" target="_blank">
+                        <button class="btn btnText">Visit Website</button>
+                    </a>
                 </div>
             </section>
 
-            <section id="contact_us" class="section section-abt__aric section__contact-us">
-                <div class="abt__aric--img-cont contact_us--img-cont">
-                    <img class="map_img" src="./Assets/Map Image.jpg" alt="" />
-                    <div class="box--cont">
-                        <div class="box arrow-bottom">Morena Link Road, Gwalior <br />Madhya Pradesh, India</div>
-                    </div>
+            <!-- Contact Us -->
+            <section class="division contactUs" id="contactUs">
+                <div class="imageSubsection">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14313.504679122303!2d78.1741388!3d26.2494521!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf834069adc0c9b89!2sAtal%20Bihari%20Vajpayee%20Indian%20Institute%20of%20Information%20Technology%20and%20Management%20Gwalior!5e0!3m2!1sen!2sin!4v1667745800896!5m2!1sen!2sin"
+                        width="600"
+                        height="450"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
                 </div>
 
-                <div class="abt__aric--desc-cont">
-                    <div>
-                        <!-- <p class="btn btn--tag">About ARIC' <span>22</span></p> -->
-                        <h1>Get In Touch</h1>
-                    </div>
+                <div class="textSubsection">
+                    <h2 class="heading1">Get In Touch</h2>
 
-                    <p class="abt__aric--desc desc">
+                    <p class="paragraphPrimary">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut doloribus officiis vero et
                         reprehenderit! Itaque obcaecati deserunt tenetur modi quam.
                     </p>
 
-                    <div class="details">
-                        <span>CONTACT US</span>
-                        <span>hello@iiitm.ac.in</span>
-                        <span>+91 98765 43210</span>
-                    </div>
-
-                    <div class="contact--icon">
-                        <img src="./Assets/web.svg" alt="" />
-                        <img src="./Assets/insta.svg" alt="" />
-                        <img src="./Assets/twitter.svg" alt="" />
-                        <img src="./Assets/facebook.svg" alt="" />
-                    </div>
-                </div>
-            </section>
-
-            <section id="" class="section section__timeline section__stay-loop">
-                <div class="section__desc-cont">
-                    <span class="btn btn--tag">lorem ipsum</span>
-                    <h1>Stay In The Loop</h1>
-                    <p class="section--desc desc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam atque soluta iure obcaecati
-                        officiis quaerat autem dolores sint
+                    <h6 class="paragraphPrimarySemibold">Program Advisor</h6>
+                    <p class="paragraphPrimary">
+                        Prof. Anurag Srivastava <br />
+                        Dean of Alumni and External Relations, ABV-IIITM Gwalior<br />
+                        Email: anurags@iiitm.ac.in | daer@iiitm.ac.in
                     </p>
+                    <h6 class="paragraphPrimarySemibold">Program Coordinators</h6>
+                    <p class="paragraphPrimary">
+                        Dr. ManojDash, Dr. PinkuRanjan, and Dr. SantoshSingh Rathore <br />
+                        +91-7409850327, +91-7991101270 <br />
+                        Email: aric@iiitm.ac.in | santoshs@iiitm.ac.in
+                    </p>
+
+                    <div class="social">
+                        <a href="https://www.iiitm.ac.in/index.php/en/" target="_blank">
+                            <img src="./allAssets/icons/websiteLogoPrimary.svg" alt="" />
+                        </a>
+                        <a href="https://www.instagram.com/iiitmgwaliorofficial" target="_blank">
+                            <img src="./allAssets/icons/instagramLogoPrimary.svg" alt="" />
+                        </a>
+                        <a href="https://twitter.com/iiitm" target="_blank">
+                            <img src="./allAssets/icons/twitterLogoPrimary.svg" alt="" />
+                        </a>
+                        <a href="https://www.facebook.com/iiitm/" target="_blank">
+                            <img src="./allAssets/icons/facebookLogoPrimary.svg" alt="" />
+                        </a>
+                    </div>
                 </div>
-
-                <div class="form__cont">
-                    <form action="#">
-                        <input placeholder="Your Email" type="email" />
-                        <button class="btn nav__btn">Get Started</button>
-                    </form>
-                </div>
-
-                <img class="left--illustration illustration" src="./Assets/left-illustration.svg" alt="" />
-
-                <img class="right--illustration illustration" src="./Assets/right-illustration.svg" alt="" />
             </section>
         </main>
 
-        <footer>
-            <div class="foot-left--cont footer--cont">
-                <span class="foot-loc">
-                    <img src="./Assets/map-pin.svg" alt="" />
-                    LOCATION</span
-                >
-                <span>ABV-IIITM, Morena Link Road <br />Gwalior, Madhya Pradesh <br />India,474015</span>
-            </div>
-            <div class="foot-right--cont footer--cont">
-                <div class="social">
-                    <img src="./Assets/fweb.svg" alt="" />
-                    <img src="./Assets/fins.svg" alt="" />
-                    <img src="./Assets/ftwitt.svg" alt="" />
-                    <img src="./Assets/fface.svg" alt="" />
-                </div>
-                <div class="navOptions footer--navOptions">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li>
-                            <a href="#abt_aric">About ARIC'<span>22</span></a>
-                        </li>
-                        <li><a href="#committee">Organising Committee</a></li>
-                        <li><a href="#abt_iiitm">About IIITM</a></li>
-                        <li><a href="#contact_us">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
+        <!-- footer -->
+        <footer class="division footer">
+            <p class="footerText">&copy; 2022 ABV-IIITM Gwalior. All Rights Reserved.</p>
         </footer>
     </body>
 </html>
