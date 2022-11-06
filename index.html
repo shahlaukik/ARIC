@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;350;400;420;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
             rel="stylesheet"
         />
+
+        <!-- For MUI Icons -->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,1,0"
+        />
+
+        <!-- Meta Tags -->
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="design_system.css" />
+        <link rel="stylesheet" href="design_elements.css" />
         <link rel="stylesheet" href="style.css" />
 
+        <!-- Script -->
         <script defer src="./script.js"></script>
+
+        <!-- Title -->
         <title>ARIC'22</title>
     </head>
+
     <body>
         <!-- Header -->
         <header>
             <!-- Navigation Bar -->
-            <nav class="nav__pane">
-                <div class="heading3">ARIC'22</div>
-                <div class="nav__bar paragraphSecondary">
+            <nav class="navbar">
+                <div>
+                    <a href="index.html" class="navbarLogo">
+                        <img src="./allAssets/Images/logo.png" alt="logo" />
+                    </a>
+                </div>
+
+                <!-- for screen size >900 -->
+                <div class="navOptions paragraphSecondary">
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li>
@@ -32,86 +56,102 @@
                         <li><a href="#contact_us">Contact Us</a></li>
                     </ul>
                 </div>
-                <button class="btn btnText">Register</button>
+                <a href="https://forms.gle/PNM3RCd8CZ4vjv8C9" target="_blank">
+                    <button class="btn btnText navButton">Register</button>
+                </a>
+
+                <!-- for screen size <900 -->
+                <div class="menu">
+                    <span class="material-symbols-rounded menuIcon" onclick="toggleNavOptions2()"> menu </span>
+                    <div class="navOptions2 paragraphSecondary">
+                        <span class="material-symbols-rounded menuCloseIcon" onclick="toggleNavOptions2()">
+                            close
+                        </span>
+                        <ul>
+                            <li>
+                                <a href="#" onclick="toggleNavOptions2()">Home</a>
+                            </li>
+                            <li>
+                                <a href="#abt_aric" onclick="toggleNavOptions2()">About ARIC'22</a>
+                            </li>
+                            <li>
+                                <a href="#committee" onclick="toggleNavOptions2()">Organising Committee</a>
+                            </li>
+                            <li>
+                                <a href="#abt_iiitm" onclick="toggleNavOptions2()">About IIITM</a>
+                            </li>
+                            <li>
+                                <a href="#contact_us" onclick="toggleNavOptions2()">Contact Us</a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://forms.gle/PNM3RCd8CZ4vjv8C9"
+                                    target="_blank"
+                                    onclick="toggleNavOptions2()"
+                                >
+                                    Register
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
 
             <!-- Hero Section -->
-            <section class="hero__section">
-                <div class="hero__left-cont">
-                    <h1 class="heading1">
-                        Atal Research and Incubation Conclave'22
-                    </h1>
-                    <h2 class="paragraphPrimaryItalics">
-                        By TIDE 2.0 Technology Innovation and Incubation Center,
-                        ABV-IIITM Gwalior
-                        <br />
-                        Organised by Atal Bihari Vajpayee Indian Institute of
-                        Information Technology & Management (ABV-IIITM) Gwalior
-                    </h2>
-                    <div class="hero__date">
-                        <img
-                            src="./Assets/Material Symbols/event_FILL0_wght700_GRAD0_opsz40.svg"
-                            alt="calender_icon"
-                        />
-                        <p class="heading4">09-10 October 2022</p>
-                    </div>
-                    <button class="btn btnText">Register</button>
+            <section class="division heroSection">
+                <div class="imageSubsection">
+                    <img src="./allAssets/Illustrations/heroIllustration.svg" alt="Group of persons exchanging ideas" />
                 </div>
-                <div class="hero__img-cont">
-                    <img
-                        src="./Assets/Hero Illustration- company-employees-sharing-thoughts-ideas/5469.svg"
-                        alt="Group of persons exchanging ideas"
-                    />
+                <div class="textSubsection">
+                    <h1 class="heading1">Atal Research and Incubation Conclave'22</h1>
+                    <h2 class="paragraphPrimaryItalics">
+                        Sponsored by TIDE 2.0 Technology Innovation and Incubation Center, ABV-IIITM Gwalior
+                        <br />
+                        Organised by Atal Bihari Vajpayee Indian Institute of Information Technology & Management
+                        (ABV-IIITM) Gwalior
+                    </h2>
+                    <div class="conferenceDate heading4">
+                        <span class="material-symbols-rounded"> event </span>
+                        <p>09-10 October 2022</p>
+                    </div>
+                    <a href="https://forms.gle/PNM3RCd8CZ4vjv8C9" target="_blank">
+                        <button class="btn btnText">Register</button>
+                    </a>
                 </div>
             </section>
         </header>
 
         <main>
             <!-- About ARIC'22 -->
-            <section class="section section-abt__aric">
-                <div class="abt__aric--img-cont">
-                    <img
-                        src="./Assets/Hero Illustration- company-employees-sharing-thoughts-ideas/5469.svg"
-                        alt=""
-                    />
+            <section class="division aboutARIC">
+                <div class="imageSubsection">
+                    <img src="./allAssets/Images/aboutARIC.JPG" alt="" />
                 </div>
-                <div class="abt__aric--desc-cont">
-                    <div>
-                        <h2 class="heading1">About ARIC'22</h2>
-                    </div>
-                    <p class="abt__aric--desc desc paragraphPrimary">
-                        Atal Bihari Vajpayee-Indian Institute of Information
-                        Technology and Management Gwalior (ABV-IIITM Gwalior) is
-                        organizing “Atal Research and Incubation Conclave
-                        (ARIC-2022)” under the visionary guidance of our
-                        Honorable Director Prof. S. N. Singh. The first edition
-                        of ARIC-2022 will be organized during December 9-10,
-                        2022. The conclave aims to facilitate interaction
-                        between policy advisors, corporate leaders, policy
-                        makers, entrepreneurs, and academicians in order to
-                        support the discussion amongst the Institute's students,
-                        faculties, and experts. The event will serve as a
-                        potential set - up for cultivating the engineering minds
-                        toward research, innovation, and entrepreneurship. It
-                        aims to bring the faculty's and students' integrity
-                        toward both industries and academia in order to address
-                        the difficulties in academic research, the concerns of
-                        the entire student body, and the needs of aspiring
-                        entrepreneurs across the nation.
+                <div class="textSubsection">
+                    <h2 class="heading1">About ARIC'22</h2>
+                    <p class="paragraphPrimary">
+                        Atal Bihari Vajpayee-Indian Institute of Information Technology and Management Gwalior
+                        (ABV-IIITM Gwalior) is organizing “Atal Research and Incubation Conclave (ARIC-2022)” under the
+                        visionary guidance of our Honorable Director Prof. S. N. Singh. The first edition of ARIC-2022
+                        will be organized during December 9-10, 2022. The conclave aims to facilitate interaction
+                        between policy advisors, corporate leaders, policy makers, entrepreneurs, and academicians in
+                        order to support the discussion amongst the Institute's students, faculties, and experts. The
+                        event will serve as a potential set - up for cultivating the engineering minds toward research,
+                        innovation, and entrepreneurship. It aims to bring the faculty's and students' integrity toward
+                        both industries and academia in order to address the difficulties in academic research, the
+                        concerns of the entire student body, and the needs of aspiring entrepreneurs across the nation.
                     </p>
                 </div>
             </section>
 
+            <!-- Objectives -->
             <section id="" class="section section__objectives">
                 <div class="section__desc-cont">
-                    <span class="btn btn--tag"
-                        >About ARIC' <span>22</span></span
-                    >
+                    <span class="btn btn--tag">About ARIC' <span>22</span></span>
                     <h1>Objectives</h1>
                     <p class="section--desc desc">
-                        The prime objective of the conclave is to bring together
-                        the students, faculties, and researchers to the wide
-                        spectrum of Science, Technology and Engineering fields
+                        The prime objective of the conclave is to bring together the students, faculties, and
+                        researchers to the wide spectrum of Science, Technology and Engineering fields
                     </p>
                 </div>
 
@@ -124,12 +164,9 @@
                             />
                         </div>
 
-                        <h3 class="object__cont--head">
-                            Meet Prominent Personalities
-                        </h3>
+                        <h3 class="object__cont--head">Meet Prominent Personalities</h3>
                         <p class="object__cont--desc desc">
-                            Converse with academics, researchers, and
-                            technologists from prestigious Indian and
+                            Converse with academics, researchers, and technologists from prestigious Indian and
                             international organizations
                         </p>
                     </div>
@@ -141,29 +178,20 @@
                                 alt=""
                             />
                         </div>
-                        <h3 class="object__cont--head">
-                            Explore Ongoing Research
-                        </h3>
+                        <h3 class="object__cont--head">Explore Ongoing Research</h3>
                         <p class="object__cont--desc desc">
-                            Opportunity for individuals to learn about the
-                            ongoing research being done at various institutions
-                            across the nation.
+                            Opportunity for individuals to learn about the ongoing research being done at various
+                            institutions across the nation.
                         </p>
                     </div>
 
                     <div class="object__cont">
                         <div class="object--img-cont">
-                            <img
-                                src="./Assets/Objectiives Illustration/chat-bubble.jpg/25540.jpg"
-                                alt=""
-                            />
+                            <img src="./Assets/Objectiives Illustration/chat-bubble.jpg/25540.jpg" alt="" />
                         </div>
-                        <h3 class="object__cont--head">
-                            Discussion New Projects
-                        </h3>
+                        <h3 class="object__cont--head">Discussion New Projects</h3>
                         <p class="object__cont--desc desc">
-                            Platform for discussing new projects and
-                            collaborations as well as a place for discussing
+                            Platform for discussing new projects and collaborations as well as a place for discussing
                             scientific ideas
                         </p>
                     </div>
@@ -175,13 +203,10 @@
                                 alt=""
                             />
                         </div>
-                        <h3 class="object__cont--head">
-                            Interact With Experts
-                        </h3>
+                        <h3 class="object__cont--head">Interact With Experts</h3>
                         <p class="object__cont--desc desc">
-                            Interactions of students with various research
-                            experts through the poster presentation, exhibition,
-                            and conversations
+                            Interactions of students with various research experts through the poster presentation,
+                            exhibition, and conversations
                         </p>
                     </div>
 
@@ -192,12 +217,9 @@
                                 alt=""
                             />
                         </div>
-                        <h3 class="object__cont--head">
-                            Project Funding Oppotunity
-                        </h3>
+                        <h3 class="object__cont--head">Project Funding Oppotunity</h3>
                         <p class="object__cont--desc desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Pariatur quidem.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quidem.
                         </p>
                     </div>
                 </div>
@@ -205,16 +227,12 @@
 
             <section id="" class="section section__timeline">
                 <div class="section__desc-cont">
-                    <span class="btn btn--tag"
-                        >About ARIC' <span>22</span></span
-                    >
+                    <span class="btn btn--tag">About ARIC' <span>22</span></span>
                     <h1>Timeline</h1>
                     <p class="section--desc desc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Nam atque soluta iure obcaecati officiis quaerat
-                        autem dolores sint accusantium, animi optio laborum,
-                        repellat molestiae blanditiis labore eaque fugit
-                        incidunt voluptatem!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam atque soluta iure obcaecati
+                        officiis quaerat autem dolores sint accusantium, animi optio laborum, repellat molestiae
+                        blanditiis labore eaque fugit incidunt voluptatem!
                     </p>
                 </div>
 
@@ -240,16 +258,12 @@
 
             <section id="" class="section section__registration">
                 <div class="section__desc-cont">
-                    <span class="btn btn--tag"
-                        >About ARIC' <span>22</span></span
-                    >
+                    <span class="btn btn--tag">About ARIC' <span>22</span></span>
                     <h1>Registration</h1>
                     <p class="section--desc desc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Nam atque soluta iure obcaecati officiis quaerat
-                        autem dolores sint accusantium, animi optio laborum,
-                        repellat molestiae blanditiis labore eaque fugit
-                        incidunt voluptatem!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam atque soluta iure obcaecati
+                        officiis quaerat autem dolores sint accusantium, animi optio laborum, repellat molestiae
+                        blanditiis labore eaque fugit incidunt voluptatem!
                     </p>
                 </div>
 
@@ -258,11 +272,8 @@
                         <img src="./Assets/checkmark-circle.svg" alt="" />
                         <p class="registration--head">Eligibility</p>
                         <p class="desc">
-                            Participation in this workshop is open to the
-                            faculty members/PhD Scholars/PG Students of
-                            ABV-IIITM Gwalior. The people from
-                            industries/start-up can also participate in the
-                            event.
+                            Participation in this workshop is open to the faculty members/PhD Scholars/PG Students of
+                            ABV-IIITM Gwalior. The people from industries/start-up can also participate in the event.
                         </p>
                         <ul class="desc">
                             <li>Professionals from Industries</li>
@@ -274,27 +285,18 @@
                     <div class="registration--2-3">
                         <div class="registration registration--2">
                             <img src="./Assets/business.svg" alt="" />
-                            <p class="registration--head">
-                                Accommodation. Food and Beverages
-                            </p>
+                            <p class="registration--head">Accommodation. Food and Beverages</p>
                             <p class="desc">
-                                Lorem ipsum dolor sit amet, consetetur
-                                sadipscing elitr, sed diam nonumy eirmod tempor
-                                invidunt ut labore et dolore magna aliquyam
-                                erat, sed diam voluptua. At vero eos et accusam
-                                et justo duo dolores et ea rebum
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                accusam et justo duo dolores et ea rebum
                             </p>
                         </div>
 
                         <div class="registration registration--3">
                             <img src="./Assets/icons8-rupee-30.png" alt="" />
-                            <p class="registration--head">
-                                Registration Charges
-                            </p>
-                            <p class="desc">
-                                There are no registration charges to attend the
-                                program.
-                            </p>
+                            <p class="registration--head">Registration Charges</p>
+                            <p class="desc">There are no registration charges to attend the program.</p>
                         </div>
                     </div>
                 </div>
@@ -307,9 +309,8 @@
                     <!-- <span class="btn btn--tag">About ARIC' <span>22</span></span> -->
                     <h1>Organising Committee</h1>
                     <p class="section--desc desc">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed diam nonumy eirmod tempor invidunt ut labore et
-                        dolore magna aliquyam erat, sed diam voluptua. At.
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At.
                     </p>
                 </div>
 
@@ -317,10 +318,7 @@
                     <div class="organization--1-2">
                         <div class="organization">
                             <div class="org--img-cont">
-                                <img
-                                    src="./Assets/Sir Photos/1650440085_Prof.-Sri-Niwas-Singh.jpg"
-                                    alt=""
-                                />
+                                <img src="./Assets/Sir Photos/1650440085_Prof.-Sri-Niwas-Singh.jpg" alt="" />
                             </div>
                             <span class="org--name">Prof S N Singh</span>
                             <span class="org--type">Patron</span>
@@ -329,27 +327,17 @@
 
                         <div class="organization">
                             <div class="org--img-cont">
-                                <img
-                                    src="./Assets/Sir Photos/1624907642_Anurag-1.jpg"
-                                    alt=""
-                                />
+                                <img src="./Assets/Sir Photos/1624907642_Anurag-1.jpg" alt="" />
                             </div>
-                            <span class="org--name"
-                                >Prof Anurag Shrivastava</span
-                            >
+                            <span class="org--name">Prof Anurag Shrivastava</span>
                             <span class="org--type">Program Advisor</span>
-                            <span class="org--place"
-                                >Dean Alumini and External Relations</span
-                            >
+                            <span class="org--place">Dean Alumini and External Relations</span>
                         </div>
                     </div>
 
                     <div class="organization">
                         <div class="org--img-cont">
-                            <img
-                                src="./Assets/Sir Photos/1554377483_Manoj Dash.jpg"
-                                alt=""
-                            />
+                            <img src="./Assets/Sir Photos/1554377483_Manoj Dash.jpg" alt="" />
                         </div>
                         <span class="org--name">Dr Manoj Dash</span>
                         <span class="org--type">Program Coordinator </span>
@@ -358,10 +346,7 @@
 
                     <div class="organization">
                         <div class="org--img-cont">
-                            <img
-                                src="./Assets/Sir Photos/1555417021_Pinku Ranjan.png"
-                                alt=""
-                            />
+                            <img src="./Assets/Sir Photos/1555417021_Pinku Ranjan.png" alt="" />
                         </div>
                         <span class="org--name">Dr Pinku Ranjan</span>
                         <span class="org--type">Program Coordinator</span>
@@ -370,10 +355,7 @@
 
                     <div class="organization">
                         <div class="org--img-cont">
-                            <img
-                                src="./Assets/Sir Photos/1601567414_Santosh Singh.jpg"
-                                alt=""
-                            />
+                            <img src="./Assets/Sir Photos/1601567414_Santosh Singh.jpg" alt="" />
                         </div>
                         <span class="org--name">Dr Santosh Singh Rathod</span>
                         <span class="org--type">Program Coordinator</span>
@@ -382,10 +364,7 @@
                 </div>
             </section>
 
-            <section
-                id="abt_iiitm"
-                class="section section-abt__aric section__abt-abv"
-            >
+            <section id="abt_iiitm" class="section section-abt__aric section__abt-abv">
                 <div class="abt__aric--desc-cont">
                     <div>
                         <!-- <p class="btn btn--tag">About ARIC' <span>22</span></p> -->
@@ -393,49 +372,32 @@
                     </div>
 
                     <p class="abt__aric--desc desc">
-                        Atal Bihari Vajpayee-Indian Institute of Information
-                        Technology and Management Gwalior (ABV-IIITM Gwalior) is
-                        an apex Information Technology (IT) and Management
-                        Institute, established by the Government of India.
-                        ABV-IIITM Gwalior has been declared an Institute of
-                        National importance. The Institute strives to become a
-                        world-class Institution which endeavors to carve young
-                        minds through teaching and research and develop them as
-                        tomorrow's leaders. The Institute's mandate is to create
-                        Information Technology enabled Management solutions for
-                        nation building. The Institute offers various programmes
-                        at UG/PG and Doctoral level. The Institute has
-                        established research collaborations with various
-                        Universities in USA, UK, France, Denmark, and Japan. The
-                        Institute has also developed industrial linkages with
-                        various research labs and industries. The students of
-                        the Institute are publishing their research work in
-                        various national/ international conferences and journals
-                        of repute.
+                        Atal Bihari Vajpayee-Indian Institute of Information Technology and Management Gwalior
+                        (ABV-IIITM Gwalior) is an apex Information Technology (IT) and Management Institute, established
+                        by the Government of India. ABV-IIITM Gwalior has been declared an Institute of National
+                        importance. The Institute strives to become a world-class Institution which endeavors to carve
+                        young minds through teaching and research and develop them as tomorrow's leaders. The
+                        Institute's mandate is to create Information Technology enabled Management solutions for nation
+                        building. The Institute offers various programmes at UG/PG and Doctoral level. The Institute has
+                        established research collaborations with various Universities in USA, UK, France, Denmark, and
+                        Japan. The Institute has also developed industrial linkages with various research labs and
+                        industries. The students of the Institute are publishing their research work in various
+                        national/ international conferences and journals of repute.
                     </p>
 
                     <button class="btn btn--abt__abv">Visit Website</button>
                 </div>
 
                 <div class="abt__aric--img-cont">
-                    <img
-                        src="./Assets/Hero Illustration- company-employees-sharing-thoughts-ideas/5469.svg"
-                        alt=""
-                    />
+                    <img src="./Assets/Hero Illustration- company-employees-sharing-thoughts-ideas/5469.svg" alt="" />
                 </div>
             </section>
 
-            <section
-                id="contact_us"
-                class="section section-abt__aric section__contact-us"
-            >
+            <section id="contact_us" class="section section-abt__aric section__contact-us">
                 <div class="abt__aric--img-cont contact_us--img-cont">
                     <img class="map_img" src="./Assets/Map Image.jpg" alt="" />
                     <div class="box--cont">
-                        <div class="box arrow-bottom">
-                            Morena Link Road, Gwalior <br />Madhya Pradesh,
-                            India
-                        </div>
+                        <div class="box arrow-bottom">Morena Link Road, Gwalior <br />Madhya Pradesh, India</div>
                     </div>
                 </div>
 
@@ -446,9 +408,8 @@
                     </div>
 
                     <p class="abt__aric--desc desc">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Ut doloribus officiis vero et reprehenderit!
-                        Itaque obcaecati deserunt tenetur modi quam.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut doloribus officiis vero et
+                        reprehenderit! Itaque obcaecati deserunt tenetur modi quam.
                     </p>
 
                     <div class="details">
@@ -471,9 +432,8 @@
                     <span class="btn btn--tag">lorem ipsum</span>
                     <h1>Stay In The Loop</h1>
                     <p class="section--desc desc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Nam atque soluta iure obcaecati officiis quaerat
-                        autem dolores sint
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam atque soluta iure obcaecati
+                        officiis quaerat autem dolores sint
                     </p>
                 </div>
 
@@ -484,17 +444,9 @@
                     </form>
                 </div>
 
-                <img
-                    class="left--illustration illustration"
-                    src="./Assets/left-illustration.svg"
-                    alt=""
-                />
+                <img class="left--illustration illustration" src="./Assets/left-illustration.svg" alt="" />
 
-                <img
-                    class="right--illustration illustration"
-                    src="./Assets/right-illustration.svg"
-                    alt=""
-                />
+                <img class="right--illustration illustration" src="./Assets/right-illustration.svg" alt="" />
             </section>
         </main>
 
@@ -504,10 +456,7 @@
                     <img src="./Assets/map-pin.svg" alt="" />
                     LOCATION</span
                 >
-                <span
-                    >ABV-IIITM, Morena Link Road <br />Gwalior, Madhya Pradesh
-                    <br />India,474015</span
-                >
+                <span>ABV-IIITM, Morena Link Road <br />Gwalior, Madhya Pradesh <br />India,474015</span>
             </div>
             <div class="foot-right--cont footer--cont">
                 <div class="social">
@@ -516,7 +465,7 @@
                     <img src="./Assets/ftwitt.svg" alt="" />
                     <img src="./Assets/fface.svg" alt="" />
                 </div>
-                <div class="nav__bar footer--nav__bar">
+                <div class="navOptions footer--navOptions">
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li>

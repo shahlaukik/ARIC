@@ -1,215 +1,3 @@
-/* Reset CSS */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-body {
-    line-height: 1;
-}
-ol,
-ul {
-    list-style: none;
-}
-blockquote,
-q {
-    quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: "";
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-/* Colors */
-:root {
-    --color-accent: #0880ae;
-    --color-primary: #2c2738;
-    --color-primary-darker: #183b56;
-    --color-secondary: #756f86;
-    --color-muted: #7c9cbf;
-    --color-tint: #ebf4f8;
-    --color-shade: #dbe2ea;
-    --color-bright: #ffffff;
-    --color-shadow: #2c273814;
-}
-
-/* Character Styles */
-.heading1 {
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1.2;
-    color: var(--color-primary);
-}
-.heading2 {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.25;
-    color: var(--color-primary);
-}
-.heading3 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.3;
-    color: var(--color-primary);
-}
-.heading4 {
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 1.3;
-    color: var(--color-primary);
-}
-.paragraphPrimarySemibold {
-    font-size: 1.25rem;
-    font-weight: 600;
-    line-height: 1.4;
-    color: var(--color-primary);
-}
-.paragraphPrimary {
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 1.4;
-    color: var(--color-primary);
-}
-.paragraphPrimaryItalics {
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 1.4;
-    color: var(--color-primary);
-    font-style: italic;
-}
-.paragraphSecondarySemibold {
-    font-size: 1.25rem;
-    font-weight: 600;
-    line-height: 1.4;
-    color: var(--color-secondary);
-}
-.paragraphSecondary {
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 1.4;
-    color: var(--color-secondary);
-}
-.paragraphSecondaryItalics {
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 1.4;
-    color: var(--color-secondary);
-    font-style: italic;
-}
-.btnText {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--color-tint);
-}
-
 /* Basic Setup */
 * {
     box-sizing: border-box;
@@ -226,26 +14,10 @@ body {
     color: var(--color-primary);
 }
 
-/* Buttons */
-.btn {
-    background-color: var(--color-accent);
-    padding: 1.2rem 3rem;
-    border-radius: 0.6rem;
-    box-shadow: 0px 4px 8px var(--color-shadow);
-    border: none;
-    width: fit-content;
-    /* border: 2px solid var(--color-accent); */
-    transition: all 0.2s ease-in-out;
-}
-.btn:hover {
-    cursor: pointer;
-    box-shadow: 0px 24px 32px var(--color-shadow);
-    /* border: 2px solid var(--color-primary); */
-}
-
-/* Nav Bar properties */
-.nav__pane {
+/* Navbar properties */
+.navbar {
     position: fixed;
+    top: 0;
     width: 100vw;
     z-index: 999;
     background-color: var(--color-bright);
@@ -255,64 +27,112 @@ body {
     transition: box-shadow 0.3s ease-in-out;
     padding: 2rem 6rem;
 }
-.nav__shadow {
+.navbarShadow {
     box-shadow: 0px 16px 56px var(--color-shadow);
 }
-.nav__bar ul {
+.navOptions ul {
     list-style: none;
     display: flex;
     gap: 2rem;
 }
-.nav__bar a:link,
-.nav__bar a:visited {
+.navOptions a:link,
+.navOptions a:visited,
+.navOptions2 a:link,
+.navOptions2 a:visited {
     text-decoration: none;
     color: var(--color-secondary);
 }
-.nav__bar a:hover,
-.nav__bar a:active {
+.navOptions a:hover,
+.navOptions a:active,
+.navOptions2 a:hover,
+.navOptions2 a:active {
     color: var(--color-primary);
+}
+.navbarLogo img {
+    height: 4rem;
+}
+.menuIcon {
+    display: block;
+    font-size: 4rem;
+    color: var(--color-accent);
+}
+.menuIcon:hover {
+    cursor: pointer;
+}
+.menuCloseIcon {
+    font-size: 4rem;
+    color: var(--color-accent);
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+}
+.menuCloseIcon:hover {
+    cursor: pointer;
+}
+.navOptions2 {
+    opacity: 0;
+    position: fixed;
+    height: 100vh;
+    width: 00vw;
+    top: 0;
+    right: 0;
+    background-color: var(--color-bright);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+.navOptions2 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.navOptions2Visible {
+    opacity: 1;
+    width: 100vw;
+}
+@media screen and (min-width: 900px) {
+    .menu {
+        display: none;
+    }
+}
+@media screen and (max-width: 900px) {
+    .navbar {
+        padding: 2rem 2rem;
+    }
+    .navOptions,
+    .navButton {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
 }
 
 /* Hero Section */
-.hero__section {
-    padding: 6rem 6rem 0 6rem;
-    display: flex;
-    gap: 6rem;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+.heroSection {
+    margin-top: 8rem;
+    flex-direction: row-reverse;
 }
-.hero__left-cont {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.hero__left-cont h1 {
+.heroSection>.textSubsection>h1 {
     margin-bottom: 2rem;
 }
-.hero__left-cont h2 {
+.heroSection>.textSubsection>h2 {
     margin-bottom: 4rem;
 }
-.hero__date {
+.conferenceDate {
     display: flex;
     align-items: center;
     gap: 1rem;
     margin-bottom: 8rem;
 }
-.hero__img-cont {
-    width: 40%;
-}
-.hero__img-cont img {
-    width: 100%;
-}
 
-/* About Section */
-.abt__aric--img-cont {
-    width: 40%;
-}
-.abt__aric--img-cont img {
-    width: 100%;
+/* About ARIC */
+.aboutARIC>.textSubsection>h2 {
+    margin-bottom: 2rem;
 }
 
 .section {
@@ -633,13 +453,13 @@ footer {
     justify-content: space-between;
 }
 
-.footer--nav__bar ul {
+.footer--navOptions ul {
     justify-content: flex-end;
     margin-right: 1rem;
 }
 
-.footer--nav__bar a:link,
-.footer--nav__bar a:visited {
+.footer--navOptions a:link,
+.footer--navOptions a:visited {
     color: var(--color-tint);
     font-size: 1.24rem;
 }
