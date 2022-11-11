@@ -23,8 +23,9 @@
 .navOptions a:visited,
 .navOptions2 a:link,
 .navOptions2 a:visited {
-    text-decoration: none;
-    color: var(--color-secondary);
+    /* text-decoration: none; */
+    /* color: var(--color-secondary); */
+    color: var(--color-primary-darker);
 }
 .navOptions a:hover,
 .navOptions a:active,

@@ -37,38 +37,38 @@
     color: var(--color-primary);
 }
 .paragraphPrimarySemibold {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.4;
     color: var(--color-primary);
 }
 .paragraphPrimary {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.4;
     color: var(--color-primary);
 }
 .paragraphPrimaryItalics {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.4;
     color: var(--color-primary);
     font-style: italic;
 }
 .paragraphSecondarySemibold {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.4;
     color: var(--color-secondary);
 }
 .paragraphSecondary {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.4;
     color: var(--color-secondary);
 }
 .paragraphSecondaryItalics {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.4;
     color: var(--color-secondary);
@@ -80,7 +80,7 @@
     color: var(--color-tint);
 }
 .footerText {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.4;
     color: var(--color-tint);
@@ -103,6 +103,18 @@
     .heading4 {
         font-size: 1.5rem;
     }
+    .paragraphPrimarySemibold {
+        font-size: 1.25rem;
+    }
+    .paragraphPrimary {
+        font-size: 1.25rem;
+    }
+    .paragraphPrimaryItalics {
+        font-size: 1.25rem;
+    }
+    .paragraphSecondarySemibold {
+        font-size: 1.25rem;
+    }
 }
 @media screen and (max-width: 600px) {
     .heading1 {
@@ -118,6 +130,18 @@
         font-size: 1.5rem;
     }
     .btnText {
+        font-size: 1.25rem;
+    }
+    .paragraphPrimarySemibold {
+        font-size: 1.25rem;
+    }
+    .paragraphPrimary {
+        font-size: 1.25rem;
+    }
+    .paragraphPrimaryItalics {
+        font-size: 1.25rem;
+    }
+    .paragraphSecondarySemibold {
         font-size: 1.25rem;
     }
 }
