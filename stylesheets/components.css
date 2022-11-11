@@ -40,15 +40,27 @@
     max-width: 30rem;
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: 24rem;
+    flex-basis: 17rem;
 }
 .card > .cardImg {
-    width: 6rem;
-    height: 6rem;
+    width: 8rem;
+    height: 8rem;
     border-radius: 50%;
     border: 1.6px solid var(--color-primary);
     overflow: hidden;
     margin-bottom: 1rem;
+}
+@media screen and (max-width: 600px) {
+    .card > .cardImg {
+        width: 6rem;
+        height: 6rem;
+    }
+}
+@media screen and (min-width: 2000px) {
+    .card > .cardImg {
+        width: 10rem;
+        height: 10rem;
+    }
 }
 .card > .cardImg > img {
     width: 100%;

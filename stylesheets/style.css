@@ -91,6 +91,9 @@
 }
 
 /* Organising Committee */
+.committee {
+    flex-direction: column;
+}
 
 /* About IIITM */
 .aboutIIITM {
