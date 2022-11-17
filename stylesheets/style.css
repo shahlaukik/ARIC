@@ -24,6 +24,28 @@
     }
 }
 
+/* Speakers */
+.speakers {
+    flex-direction: column;
+}
+#showAll > .cardImg,
+#showLess > .cardImg {
+    display: flex;
+    justify-content: center;
+}
+#showAll > .cardImg > span,
+#showLess > .cardImg > span {
+    display: flex;
+    height: inherit;
+    width: inherit;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+.hide {
+    display: none;
+}
+
 /* About ARIC */
 .aboutARIC > .textSubsection > h2 {
     margin-bottom: 4rem;
@@ -35,6 +57,7 @@
 }
 
 /* Objectives */
+
 
 /* Timline */
 .timeline {
@@ -144,236 +167,4 @@
     .footer {
         padding: 2rem;
     }
-}
-
-.section {
-    padding: 8rem 6rem;
-    display: flex;
-    align-items: center;
-}
-
-.section-abt__aric {
-    gap: 8rem;
-}
-
-.abt__aric--desc-cont {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 3.6rem;
-    justify-content: center;
-}
-
-.btn--tag {
-    width: fit-content;
-    margin-bottom: 1rem;
-    font-weight: 500;
-    font-size: 1.4rem;
-    display: inline-block;
-}
-
-.btn--tag span {
-    font-size: 1.2rem;
-}
-
-.desc {
-    font-size: 1.4rem;
-    line-height: 1.6;
-}
-
-.section__objectives,
-.section__timeline,
-.section__registration,
-.section__organization {
-    flex-direction: column;
-}
-
-.section__desc-cont {
-    text-align: center;
-    width: 48rem;
-}
-
-.section--desc {
-    margin-top: 2rem;
-}
-
-.objectives__cont {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    column-gap: 4rem;
-    margin-top: 6rem;
-}
-
-.object__cont {
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-    align-items: center;
-}
-
-.object__cont--desc {
-    text-align: center;
-}
-
-h3 {
-    text-align: center;
-    color: var(--color-primary);
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-.registration--head {
-    font-size: 1.4rem;
-    font-weight: 500;
-}
-
-.registrations__cont {
-    padding: 0 8rem;
-    margin-top: 8.8rem;
-    display: grid;
-    column-gap: 16rem;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
-    row-gap: 8rem;
-}
-
-.registration {
-    display: flex;
-    flex-direction: column;
-    gap: 1.4rem;
-    position: relative;
-}
-
-.registration img {
-    height: 3.2rem;
-    width: 3.2rem;
-    position: absolute;
-    top: -0.8rem;
-    left: -4.8rem;
-}
-
-.registration ul {
-    margin-left: 1.4rem;
-}
-
-.registration--2-3 {
-    display: flex;
-    flex-direction: column;
-    gap: 2.4rem;
-}
-
-.organizations--cont {
-    margin-top: 8rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    row-gap: 6rem;
-    column-gap: 10rem;
-}
-
-.organization--1-2 {
-    display: flex;
-    justify-content: space-evenly;
-    grid-column: 1/-1;
-}
-
-.organization {
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-    align-items: center;
-}
-
-.org--img-cont {
-    height: 8rem;
-    width: 8rem;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 2px solid var(--color-primary-darker);
-}
-
-.org--img-cont img {
-    width: 100%;
-    /* transform: scale(0.96); */
-}
-
-.organization span {
-    font-size: 1.32rem;
-}
-
-.box--cont {
-    position: absolute;
-    top: 20%;
-    left: 26%;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
-    border-radius: 1rem;
-}
-
-.box {
-    width: max-content;
-    height: max-content;
-    background-color: white;
-    color: #2c2738;
-    padding: 2rem;
-    position: relative;
-    border-radius: 1rem;
-}
-
-.box.arrow-bottom:after {
-    content: "";
-    position: absolute;
-    bottom: -1rem;
-    left: 50%;
-    border-top: 1rem solid #fff;
-    border-right: 4px solid transparent;
-    border-left: 4px solid transparent;
-    border-bottom: none;
-}
-
-.details {
-    font-size: 1.2rem;
-    font-weight: 500;
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-}
-
-.illustration {
-    z-index: -1;
-}
-
-.left--illustration {
-    position: absolute;
-    left: -10rem;
-    width: 24rem;
-}
-
-.right--illustration {
-    width: 36rem;
-    position: absolute;
-    right: -14rem;
-    top: -4rem;
-}
-
-/* width */
-::-webkit-scrollbar {
-    width: 1rem;
-    height: 8px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: #f3f3f3;
-    border-radius: 100px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: var(--color-primary);
-    border-radius: 100px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: var(--color-primary-darker);
 }
